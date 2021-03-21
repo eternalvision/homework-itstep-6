@@ -3,6 +3,10 @@
     --above-color: #a499aa;
     --logo-color: #34547A;
     --text-lorem-color: #727272;
+
+    --cubic-main:cubic-bezier(0.4, 0, 0.2, 1);
+    --whitey-color: rgba(255, 255, 255, 1);
+    --secondary-color: #34547A;
 }
 
 * {
@@ -11,6 +15,10 @@
 }
 a{
     text-decoration: none;
+}
+
+ul{
+    list-style: none;
 }
 
 .section{
@@ -37,8 +45,12 @@ a{
     font-weight: normal;
     font-size: 48px;
     line-height: 60px;
-    color:var(--logo-color);
+
     padding-right: 340px ;
+}
+.logo a{
+    color:var(--logo-color);
+
 }
 .nav-top{
     display: block;
@@ -52,6 +64,12 @@ a{
     letter-spacing: 0.1em;
     margin-top: 22px;
 }
+
+/* .nav-top:hover{
+
+    color:var(--logo-color);
+} */
+
 .nav-top a{
     color:var(--text-main-color);
 }
@@ -62,6 +80,7 @@ a{
 /* VER */
 .design-block{
     display: inline-flex;
+    height: 580px;
 }
 .computer-img{
     display: inline-block;
@@ -69,13 +88,14 @@ a{
     margin-left: 70px;
 }
 .design-makeup{
-
     display: inline-block;
     margin-left: 131px;
-        margin-top: 171px;
+    margin-top: 171px;
+    width: 541px;
+    height: 172px;
 }
 .design-makeup h1{
-        display: inline-block;
+    display: inline-block;
     font-family: Roboto;
     font-style: normal;
     font-weight: 500;
@@ -91,4 +111,37 @@ a{
     font-size: 16px;
     line-height: 26px;
     color: var(--text-lorem-color);
+    padding-top: 60px;
 }
+
+/* ОБО МНЕ */
+.about-me-block{
+    width: 540px;
+    height: 147px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 123px;
+}
+    .about-me-title{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 37px;
+    text-align: center;
+}
+
+.about-me-block p{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+
+    padding-top: 50px;
+    padding-bottom: 100px;
+
+    color: var(--text-lorem-color);
+}
+

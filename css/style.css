@@ -115,6 +115,7 @@ ul{
 }
 
 /* ОБО МНЕ */
+
 .about-me-block{
     width: 540px;
     height: 147px;
@@ -122,7 +123,7 @@ ul{
     margin-right: auto;
     margin-top: 123px;
 }
-    .about-me-title{
+.about-me-title{
     font-family: Roboto;
     font-style: normal;
     font-weight: 500;
@@ -130,7 +131,6 @@ ul{
     line-height: 37px;
     text-align: center;
 }
-
 .about-me-block p{
     font-family: Roboto;
     font-style: normal;
@@ -140,20 +140,167 @@ ul{
     text-align: center;
 
     padding-top: 50px;
-    padding-bottom: 100px;
 
     color: var(--text-lorem-color);
 }
 
-main{
-    background-color: var(--secondary-color);
-}
 
 .under-about-block{
     height: 250px;
 }
 
 .tel-ico{
+    display: inline-block;
     width: 50px;
     height: 50px;
+}
+
+.section-under-b{
+    background-color: var(--secondary-color);
+    display: block;
+    height: 250px;
+}
+
+.under-about-block{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 1200px;
+        height: 150px;
+}
+/*  */
+/*  */
+
+.list-achiv{
+    display: inline-block;
+    padding: 100px 0;
+
+}
+.achiv-info{
+    display: inline-block;
+    margin-left: 20px;
+}
+.list-achiv:not(:last-child){
+    padding-right: 50px;
+
+}
+.achiv-num{
+    display: inline-block;
+    font-family: Roboto;
+    color: var(--whitey-color);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 25px;
+}
+.list-achiv p{
+    font-family: Roboto;
+    display: inline-block;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 26px;
+    color: var(--whitey-color);
+}
+.skills-title{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 37px;
+    padding-bottom: 50px;
+}
+.list-skills{
+    display: inline-block;
+}
+.list-skills li{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 26px;
+    color:var(--text-lorem-color);
+    border-bottom: 4px solid #34547A;
+    width: 454px;
+    padding-bottom: 20px;
+    margin-bottom: 54px;
+}
+.list-skills li:nth-child(2){
+        border-bottom: 4px solid #C4C4C4;
+}
+
+.skills-block{
+display: inline-block;
+}
+
+.rect-img{
+    margin-left: 150px;
+    margin-top: 102px;
+}
+
+.section-working{
+    background-color:var(--bg-first-color);
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.how-i-work{
+    padding-top: 100px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 37px;
+    text-align: center;
+}
+.work-block{
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.work-paragraph{
+    margin-left: auto;
+    margin-right: auto;
+
+    margin-top: 50px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+
+    line-height: 26px;
+    text-align: center;
+    color: var(--text-lorem-color);
+
+    width: 540px;
+    height: 67px;
+}
+
+.video-work{
+    padding-top: 57px;
+display: block;
+margin-left: auto;
+margin-right: auto;
+}
+
+.hero-button-work{
+        background-color: var(--secondary-color);
+        color: var(--whitey-color);
+
+        font-size: 16px;
+        width: 225px;
+        height: 65px;
+
+        padding-top: 20px;
+        text-align: center;
+        text-decoration: none;
+        text-transform: none;
+
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 67px;
 }

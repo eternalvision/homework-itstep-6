@@ -41,6 +41,41 @@ ul{
     list-style: none;
     padding-top: 57px;
 }
+.nav-drop{
+    opacity: 0;
+    position: absolute;
+    background-color: #51558b;
+    width: 160px;
+    padding: 10px;
+    transition:250ms;
+visibility: hidden;
+}
+ul.nav-drop li {
+    color: #fff;
+    padding: 0;
+    text-decoration: none;
+    text-align: left;
+    opacity: 1;
+    width: 100%;
+    font-size: 16px;
+}
+.dropdown:hover ul.nav-drop {
+    opacity: 1;
+visibility: visible;
+        -webkit-transform: scale(0.9);
+        -ms-transform: scale(0.9);
+        transform: scale(0.9);
+
+}
+
+
+.top-drop{
+display: inline-block;
+}
+.nav-drop li:not(:last-child){
+    padding-bottom: 20px;
+
+}
 .logo{
     font-family: Revalia;
     font-style: normal;

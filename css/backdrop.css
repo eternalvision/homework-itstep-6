@@ -362,7 +362,7 @@ textarea:focus {
     transition: 250ms;
 }
 .button-cont:hover,
-.side-button-1 .side-b:hover
+.side-button-1 .side-b:hove
 {
         -webkit-transform: scale(0.9);
         -ms-transform: scale(0.9);

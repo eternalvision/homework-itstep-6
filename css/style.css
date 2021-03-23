@@ -21,6 +21,8 @@ ul{
     list-style: none;
 }
 
+
+
 .section{
     width: 1200px;
     margin-left: auto;
@@ -47,6 +49,20 @@ ul{
     line-height: 60px;
 
     padding-right: 340px ;
+}
+.wd-hover svg{
+    fill:#718eaf;
+
+    transition: 250ms;
+
+    width: 85px;
+    height: 38px;
+}
+.wd-hover svg:hover{
+    fill: #34547A;
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
 }
 .logo a{
     color:var(--logo-color);
@@ -176,8 +192,7 @@ ul{
 
 .list-achiv{
     display: inline-block;
-    padding: 100px 0;
-
+padding-top: 50px;
 }
 .achiv-info{
     display: inline-block;
@@ -215,6 +230,7 @@ ul{
 }
 .list-skills{
     display: inline-block;
+    margin-bottom: 122px ;
 }
 .list-skills li{
     font-family: Roboto;
@@ -258,6 +274,7 @@ display: inline-block;
 }
 .work-block{
     width: 1200px;
+    height: 1040px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -286,21 +303,74 @@ display: block;
 margin-left: auto;
 margin-right: auto;
 }
+/*  */
+/*  */
+.microsoft-logo{
+text-align: center;
+}
+.microsoft-logo li{
+    display: inline-block;
 
-.hero-button-work{
-        background-color: var(--secondary-color);
-        color: var(--whitey-color);
+}
+.microsoft-logo li:not(:last-child){
+    padding-right: 30px;
+}
+/* Footer */
+.section-under-footer{
+    background-color: var(--secondary-color);
+    display: block;
+    height: 150px;
+}
 
-        font-size: 16px;
-        width: 225px;
-        height: 65px;
+.footer-social{
+    display: inline-block;
+}
 
-        padding-top: 20px;
-        text-align: center;
-        text-decoration: none;
-        text-transform: none;
 
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 67px;
+.under-about-block li h3{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 25px;
+    color: var(--whitey-color);
+    padding-top: 53px;
+}
+
+.under-about-block li h4{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 21px;
+    color: var(--whitey-color);
+    padding-top: 20px;
+}
+
+.ico-social{
+    display: inline-flex;
+    padding-left: 800px;
+}
+.ico-social li{
+    display: inline-block;
+}
+.ico-social li svg{
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.link-works{
+    padding:10px 125px 10px 5px;
+}
+.my-work{
+    background-color:rgb(95, 100, 161);
+    transition: background-color 250ms;
+    padding: 10px;
+
+}
+.my-work:not(:last-child){
+    margin-bottom: 20px;
+}
+.my-work:hover{
+        background-color:rgba(55, 58, 100, 0.774);
 }

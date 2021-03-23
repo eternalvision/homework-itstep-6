@@ -46,6 +46,7 @@
     height: 65px;
     padding-top: 22px;
         margin-top: 61px;
+            transition: 250ms;
 }
 
 .side-button-1 .side-b:after,

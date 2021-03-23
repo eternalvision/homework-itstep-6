@@ -13,7 +13,8 @@
       href="https://fonts.googleapis.com/css2?family=Revalia&family=Roboto:wght@400;500&display=swap"
       rel="stylesheet"
     />
-    <title>Document</title>
+    <link rel="shortcut icon" href="/img/WD-white.svg" type="image/x-icon" />
+    <title>Design and Layout</title>
   </head>
   <body>
     <header>
@@ -21,7 +22,13 @@
         <!-- НАВИГАЦИЯ -->
         <section class="section">
           <ul class="nav-header">
-            <li class="logo"><a href="./index.html">WD</a></li>
+            <li class="logo">
+              <a class="wd-hover" href="./index.html">
+                <svg>
+                  <use href="./img/WD.svg#wd"></use>
+                </svg>
+              </a>
+            </li>
             <li class="nav-top"><a href="#">ГЛАВНАЯ</a></li>
             <li class="nav-top"><a href="#">ОБ АВТОРЕ</a></li>
             <li class="nav-top"><a href="#">НАВЫКИ</a></li>
@@ -74,10 +81,75 @@
         <input type="checkbox" id="side-checkbox" />
         <div class="side-panel">
           <label class="side-button-2" for="side-checkbox">+</label>
-          <div class="side-title">Проекты по годам:</div>
-          <p>Данные</p>
-          <p>Данные</p>
-          <p>Данные</p>
+          <div class="side-title">Проекты:</div>
+          <ul>
+            <li class="my-work">
+              <a
+                class="link-works"
+                href="https://eternalvision.github.io/goit-markup-hw-06/index.html"
+                target="_blank"
+              >
+                <svg width="145" height="20">
+                  <use href="./img/WebStudio.svg#webstudio"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="my-work">
+              <a
+                class="link-works"
+                href="https://eternalvision.github.io/goit-markup-hw-06/index.html"
+                target="_blank"
+              >
+                <svg width="145" height="20">
+                  <use href="./img/WebStudio.svg#webstudio"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="my-work">
+              <a
+                class="link-works"
+                href="https://eternalvision.github.io/goit-markup-hw-06/index.html"
+                target="_blank"
+              >
+                <svg width="145" height="20">
+                  <use href="./img/WebStudio.svg#webstudio"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="my-work">
+              <a
+                class="link-works"
+                href="https://eternalvision.github.io/goit-markup-hw-06/index.html"
+                target="_blank"
+              >
+                <svg width="145" height="20">
+                  <use href="./img/WebStudio.svg#webstudio"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="my-work">
+              <a
+                class="link-works"
+                href="https://eternalvision.github.io/goit-markup-hw-06/index.html"
+                target="_blank"
+              >
+                <svg width="145" height="20">
+                  <use href="./img/WebStudio.svg#webstudio"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="my-work">
+              <a
+                class="link-works"
+                href="https://eternalvision.github.io/goit-markup-hw-06/index.html"
+                target="_blank"
+              >
+                <svg width="145" height="20">
+                  <use href="./img/WebStudio.svg#webstudio"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
         </div>
       </section>
 
@@ -225,16 +297,156 @@
           >
           </iframe>
           <div class="hero-button-work">
-            <a data-modal-opens href="#">
+            <a data-modal-open-under href="#">
               <h3 class="button-cont">СВЯЗАТЬСЯ</h3>
             </a>
           </div>
         </div>
       </section>
+      <!-- Майкрософт лого -->
+      <section>
+        <ul class="microsoft-logo">
+          <li>
+            <img
+              src="./img/microsoft.png"
+              alt="microsoft-logo"
+              width="255"
+              height="120"
+            />
+          </li>
+          <li>
+            <img
+              src="./img/microsoft.png"
+              alt="microsoft-logo"
+              width="255"
+              height="120"
+            />
+          </li>
+          <li>
+            <img
+              src="./img/microsoft.png"
+              alt="microsoft-logo"
+              width="255"
+              height="120"
+            />
+          </li>
+          <li>
+            <img
+              src="./img/microsoft.png"
+              alt="microsoft-logo"
+              width="255"
+              height="120"
+            />
+          </li>
+        </ul>
+      </section>
     </main>
-    <footer></footer>
+    <footer>
+      <section class="section-under-footer">
+        <div class="under-about-block">
+          <ul class="footer-social">
+            <li><h3>Иванов Иван</h3></li>
+            <li><h4>(с) 2020. Все права защищены.</h4></li>
+          </ul>
+          <ul class="ico-social">
+            <li>
+              <a href="#">
+                <svg width="40" height="40">
+                  <use
+                    href="./img/ico/footer-ico/instagram.svg#instagram"
+                  ></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <svg width="40" height="40">
+                  <use href="./img/ico/footer-ico/twitter.svg#twitter"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </footer>
 
     <!-- Modal -->
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <!-- Закрыть -->
+        <button class="button-modal" data-modal-close>
+          <svg width="18" height="18">
+            <use href="./img/ico/close.svg#close"></use>
+          </svg>
+        </button>
+        <!-- Форма -->
+
+        <h2 class="form-title">Оставьте свои данные</h2>
+        <form
+          name="mailing-form"
+          class="js-speaker-form"
+          autocomplete="on"
+          novalidate
+        >
+          <ul class="form-mailing">
+            <li class="form-input">
+              <label class="backdrop-label" for="name"> Имя </label>
+              <input class="about-me-back" type="name" name="name" id="name" />
+              <svg class="contact-icon" width="16" height="15">
+                <use href="./img/sprite.svg#contact-b"></use>
+              </svg>
+            </li>
+            <li class="form-input">
+              <label class="backdrop-label" for="tel"> Телефон </label>
+              <input class="about-me-back" type="tel" name="tel" id="tel" />
+              <svg class="contact-icon" width="18" height="18">
+                <use href="./img/sprite.svg#tel-b"></use>
+              </svg>
+            </li>
+            <li class="form-input">
+              <label class="backdrop-label" for="mail"> Почта </label>
+              <input class="about-me-back" type="email" name="mail" id="mail" />
+              <svg class="contact-icon" width="16" height="15">
+                <use href="./img/sprite.svg#email-b"></use>
+              </svg>
+            </li>
+            <li class="textarea-form">
+              <label class="backdrop-label" for="comment"
+                >Ваше сообщение
+              </label>
+              <textarea
+                class="textarea-backdrop"
+                type="comment"
+                name="comment"
+                id="comment"
+                placeholder="Введите текст"
+              ></textarea>
+            </li>
+            <li class="backdrop-checkbox">
+              <label class="checkbox-label">
+                <input class="chekbox-input" type="checkbox" />
+                <span class="checkbox-text"
+                  >Соглашаюсь с
+                  <a class="checkbox-link" href="#">Условиями договора</a>
+                </span>
+                <svg class="check-icon" width="16" height="15">
+                  <use href="./img/sprite.svg#icon-check"></use>
+                </svg>
+                <svg class="uncheck-icon" width="16" height="15">
+                  <use href="./img/sprite.svg#icon-uncheck"></use>
+                </svg>
+              </label>
+            </li>
+          </ul>
+
+          <button class="backdrop-button" type="submit">
+            <h2 class="button-send">Отправить</h2>
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <!-- ФОРМА 2 -->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <!-- Закрыть -->
@@ -314,8 +526,29 @@
       // MODAL
       (() => {
         const refs = {
-          openModalBtn: document.querySelector('[data-modal-open]'),
+          openModalBtn: document.querySelector(
+            '[data-modal-open]',
+            '[data-modal-opens]',
+          ),
           closeModalBtn: document.querySelector('[data-modal-close]'),
+          modal: document.querySelector('[data-modal]'),
+        };
+
+        refs.openModalBtn.addEventListener('click', toggleModal);
+        refs.closeModalBtn.addEventListener('click', toggleModal);
+
+        function toggleModal() {
+          refs.modal.classList.toggle('is-hidden');
+        }
+      })();
+      // MODAL 2
+      (() => {
+        const refs = {
+          openModalBtn: document.querySelector(
+            '[data-modal-open-under]',
+            '[data-modal-opens]',
+          ),
+          closeModalBtn: document.querySelector('[data-modal-closing]'),
           modal: document.querySelector('[data-modal]'),
         };
 
